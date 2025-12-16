@@ -1,4 +1,4 @@
-¡LAB 05-Q1- Exchange of two memory variables using a stack
+Â¡LAB 05-Q1- Exchange of two memory variables using a stack
 .386
 .model flat, stdcall
 .stack 4096
@@ -13,6 +13,6 @@ main PROC
     mov var1, ax     ; var1 = var
     pop ax           ; AX = old var1
     mov var2, ax     ; var2 = old var1
-    invoke ExitProcess, 0
+    ret
 main endp
 end main
